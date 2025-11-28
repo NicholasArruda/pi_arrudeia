@@ -1,5 +1,8 @@
 /* Reset e Base */
 * {
+    font-family: 'Spline Sans Mono', monospace;
+    font-optical-sizing: auto;   /* deixa mais bonito em tamanhos diferentes */
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

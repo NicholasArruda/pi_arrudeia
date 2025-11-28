@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/feed.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Botão de tema -->
@@ -16,20 +19,22 @@
   </button>
 
   <!-- Header -->
-  <header class="header">
-    <div class="container">
+<header class="header">
+    <div class="container header-content">
       <div class="logo">
-        <img href="index.html" src="assets/logo_amarelo.png" alt="Arrudeia" />
+        <img src="assets/logo-arrudeia.png" style="height: 80px; width: auto;" alt="Arrudeia" class="logo-img">
+        <span class="logo-text"><img src="assets/arrudeia_branco.png" alt="logo" style="width: 100px;"></span>
       </div>
       <nav class="nav">
-        <a href="index.html">Início</a>
-        <a href="#">Locais</a>
-        <a href="#" class="active">Roteiros</a>
-        <a href="#">Guias</a>
-        <a href="#">Eventos</a>
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="feed.html" class="nav-link active">ROTEIROS</a>
+        <a href="#" class="nav-link">GUIAS</a>
+        <a href="#" class="nav-link">EVENTOS</a>
+        <a href="#" class="nav-link">FAC</a>
       </nav>
       <div class="user">
-        <a href="login.html" class="user-name">Login</a>
+        <a href="login.html"></a>
+        <img src="assets/user-avatar.png" style="width: auto; height: 50px;" alt="User" class="user-avatar">
       </div>
     </div>
   </header>
@@ -227,10 +232,10 @@
         <div class="card">
           <h3>Tópicos em Alta</h3>
           <div class="tags">
-            <a href="#" class="tag">#Gastronomia</a>
-            <a href="#" class="tag">#Cultura</a>
-            <a href="#" class="tag">#Praias</a>
-            <a href="#" class="tag">#História</a>
+            <a class="tag">Gastronomia</a>
+            <a class="tag">Cultura</a>
+            <a class="tag">Praias</a>
+            <a class="tag">História</a>
           </div>
         </div>
 

@@ -6,8 +6,18 @@
   <title>Arrudeia - Recife</title>
   <link rel="stylesheet" href="css/home.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Botão de tema -->
+  <button class="theme-toggle" aria-label="Alternar tema">
+    <i class="fas fa-moon"></i>
+  </button>
 
   <!-- Header -->
   <header class="header">
@@ -17,10 +27,11 @@
         <span class="logo-text">ARRUDEIA</span>
       </div>
       <nav class="nav">
-        <a href="#" class="nav-link active">LOCAIS</a>
+        <a href="index.html" class="nav-link active">Início</a>
         <a href="feed.html" class="nav-link">ROTEIROS</a>
         <a href="#" class="nav-link">GUIAS</a>
         <a href="#" class="nav-link">EVENTOS</a>
+        <a href="#" class="nav-link">FAC</a>
       </nav>
       <div class="user">
         <a href="login.html"></a>
@@ -83,6 +94,7 @@
   </footer>
 
   <!-- JavaScript -->
+  <script src="js/theme_toggle.js"></script>
   <script src="js/script_home.js"></script>
 </body>
 
