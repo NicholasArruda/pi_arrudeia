@@ -545,7 +545,7 @@ body {
  .tag:hover {
   background: var(--primary);
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .footer {
@@ -565,7 +565,7 @@ body {
  
 /* Logo no footer */
 .footer-logo-img {
-  height: 56px;
+    height: 100px;
 }
  
 /* Ícones de redes sociais */
