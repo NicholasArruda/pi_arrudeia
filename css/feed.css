@@ -402,6 +402,7 @@ body {
   border-radius: var(--radius-sm);
   overflow: hidden;
   margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
   background: #000;
 }
 
