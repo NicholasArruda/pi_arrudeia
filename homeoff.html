@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/homeoff.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>homeOff</title>
+    <title>Arrudeia - Bem-vindo</title>
+    <link rel="icon" href="assets/logo colorida 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo colorida 1.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,8 +18,8 @@
         <div class="container header-content">
             <div class="logo">
                 <img src="assets/logo-arrudeia.png" alt="Arrudeia" class="logo-img">
+                <img src="assets/arrudeia_branco.png" alt="logo" class="logo-text">
             </div>
-            <span class="logo-text"><img src="assets/arrudeia_branco.png" style="max-width: 100px;" alt="logo"></span>
             <div class="logCad">
                 <span class="entra"><a href="login.html">Entrar</a></span>
                 <span class="cadastro"><a href="login.html">Cadastrar</a></span>
@@ -26,52 +28,82 @@
     </header>
     <!-- main -->
     <main>
-        <!-- Arrudei + Cabloco -->
-        <section>
-            <div class="content">
-                <div>
-                    <h1>ARRUDEIA</h1>
-                    <p>Arrudeia é um site de turismo focado em Recife–PE que funciona como uma rede social onde usuários
-                        podem fazer publicações, compartilhar experiências e avaliar locais que visitaram. Isso ajuda
-                        turistas a conhecerem melhor a cidade e a descobrirem novos pontos de interesse.</p>
-                </div>
-                <img src="assets/logo-cabloco.png" alt="cabloco">
+        <!-- CAROSSEL -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <ul class='slider'>
+                    <li class='item' style="background-image: url('assets/carossel\ 1.jpg')">
+                        <div class='content'>
+                            <h2 class='title'>Arrudeie</h2>
+                            <p class='description'> Redescubra Recife caminhando, explorando e se conectando com a cidade de forma consciente.</p>
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                    <li class='item' style="background-image: url('assets/carossel\ 2.jpg')">
+                        <div class='content'>
+                            <img class='title-arrudeia' src="assets/arrudeia_branco.png"></img>
+                            <p class='description'> Descubra a cidade por caminhos que valorizam histórias, pessoas e o jeito único de viver Recife. </p>
+
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                    <li class='item' style="background-image: url('assets/carossel\ 3.jpg')">
+                        <div class='content'>
+                            <h2 class='title'>Cada rua conta uma história</h2>
+                            <p class='description'> O Arrudeia conecta você a lugares que revelam a cultura, a memória e a identidade local. </p>
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                    <li class='item' style="background-image: url('assets/carossel\ 4.jpg')">
+                        <div class='content'>
+                            <h2 class='title'>Caminhos pensados para todos.</h2>
+                            <p class='description'> Indicamos trajetos com informações claras sobre acessibilidade e mobilidade urbana.
+                            </p>
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                    <li class='item' style="background-image: url('assets/carossel\ 5.jpg')">
+                        <div class='content'>
+                            <h2 class='title'>Conheça Recife com quem vive a cidade</h2>
+                            <p class='description'>
+                                Guias locais compartilham experiências autênticas e aproximam visitantes da vida recifense.
+                            </p>
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                    <li class='item' style="background-image: url('assets/carossel\ 6.jpg')">
+                        <div class='content'>
+                            <h2 class='title'>Explore Recife no seu ritmo</h2>
+                            <p class='description'> Roteiros pensados para quem quer sentir a cidade além dos pontos turísticos tradicionais. </p>
+                            <button><a href="login.html">Veja mais</a></button>
+                        </div>
+                    </li>
+                </ul>
+                <nav class='nav-btn'>
+                    <ion-icon class='btn prev' name="arrow-back-outline"><</ion-icon>
+                    <ion-icon class='btn next' name="arrow-forward-outline">></ion-icon>
+                </nav>
             </div>
         </section>
-        <!-- cadastre-se (GUIA/Estabelecimento/Usuario) -->
-        <section>
-            <div class="content-cad">
-                <div class="cad">
-                    <h2>SE CADASTRE COMO GUIA TURÍSTICO!</h2>
-                    <img class="cad-img" src="assets/guia.png" alt="pessoa">
-                    <span>
-                        <p>Os Guias turísticos podem criar roteiros personalizados no Arrudeia e escolher se desejam
-                            vendê-los ou oferecê-los gratuitamente. Essa liberdade ajuda a conectar turistas, guias e
-                            comércios locais, tornando a experiência de turismo mais prática e completa.</p>
-                    </span>
-                </div>
-                <div class="cad">
-                    <h2>CADASTRE O SEU ESTABELECIMENTO!</h2>
-                    <img class="cad-img" src="assets/estabelecimento.png" alt="bar">
-                    <span>
-                        <p>As empresas e empreendedores podem cadastrar seus estabelecimentos no Arrudeia para serem
-                            facilmente encontrados por turistas e guias turísticos, aumentando a visibilidade do negócio
-                            e atraindo novos clientes.</p>
-                    </span>
-                </div>
-                <div class="cad">
-                    <h2>SE CADASTRE COMO TURISTA!</h2>
-                    <img class="cad-img" src="assets/usuario.png" alt="grupo">
-                    <span>
-                        <p>No Arrudeia, os turistas podem descobrir os melhores lugares de Recife, ver avaliações reais,
-                            seguir roteiros prontos e compartilhar suas próprias experiências. Tudo em um só lugar, de
-                            forma simples e prática.</p>
-                    </span>
-                </div>
+        <!-- Arrudei + Cabloco -->
+        <section class="features">
+            <div class="feature-card">
+                <img src="assets/estabelecimento1.png" class="feature-icon" alt="">
+                <h3>Descoberta de Lugares</h3>
+                <p>Conheça pontos da cidade que vão além do óbvio, com histórias, cultura e vivências locais.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/guia1.png" class="feature-icon" alt="">
+                <h3>Comunidade e Guias Locais</h3>
+                <p>Roteiros criados e compartilhados por pessoas que vivem a cidade todos os dias.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/turista.png" class="feature-icon" alt="">
+                <h3>Caminhos Inteligentes</h3>
+                <p>Rotas organizadas para explorar a cidade a pé, com informações claras e práticas.</p>
             </div>
         </section>
         <figure class="mapa">
-            <h1>Mapa</h1>
             <img src="assets/Ativo 1mapa arrudeia.png" alt="mapa">
         </figure>
     </main>
@@ -99,6 +131,46 @@
         </div>
     </footer>
     <script src="js/theme_toggle.js"></script>
+    <script>
+        const slider = document.querySelector('.slider');
+        let autoplay; // variável do timer
+        const intervalTime = 5000; // 5 segundos
+
+        function nextSlide() {
+            const items = document.querySelectorAll('.item');
+            slider.append(items[0]);
+        }
+
+        function prevSlide() {
+            const items = document.querySelectorAll('.item');
+            slider.prepend(items[items.length - 1]);
+        }
+
+        // -------- AUTOPLAY --------
+        function startAutoplay() {
+            autoplay = setInterval(nextSlide, intervalTime);
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoplay);
+            startAutoplay();
+        }
+
+        // ---------- EVENTOS ----------
+        document.addEventListener('click', (e) => {
+            if (e.target.matches('.next')) {
+                nextSlide();
+                resetAutoplay(); // 🔄 reseta o timer
+            }
+            if (e.target.matches('.prev')) {
+                prevSlide();
+                resetAutoplay(); // 🔄 reseta o timer
+            }
+        });
+
+        // iniciar autoplay assim que carregar
+        startAutoplay();
+    </script>
 </body>
 
 </html>

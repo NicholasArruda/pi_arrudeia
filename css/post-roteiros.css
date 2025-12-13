@@ -250,7 +250,7 @@ p {
   margin: 3px 0;
   text-align: start;
   word-spacing: -2px;
-  color: #000000;
+  color: var(--text-primary);
   margin-top: 5%;
   text-overflow: ellipsis;
 }
@@ -276,6 +276,7 @@ p {
 
 .redes p {
   display: inline;
+  color: var(--text-secondary);
 }
 
 .redes img {

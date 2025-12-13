@@ -23,7 +23,7 @@
         <i class="fas fa-moon"></i>
     </button>
     <!-- Header -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-content">
             <div class="logo">
                 <img src="assets/logo-arrudeia.png"  alt="Arrudeia" class="logo-img">
@@ -37,9 +37,22 @@
                 <a href="faq.html" class="nav-link">FAQ</a>
             </nav>
         </div>
-    </header>
+    </header> -->
     <main class="main_login">
         <div class="container_login">
+            <div>
+                <a href="homeoff.html"><img src="assets/logo colorida 1.png"
+                        style=" max-width: 170px; margin-bottom: 10px;" alt="Arrudeia Logo"></a>
+            </div>
+            <div class="logo-container">
+                <a href="homeoff.html">
+                    <!-- Logo para tema claro (preto ou colorida)
+                    <img src="assets/tipografia preto.png" class="logo-theme logo-light" alt="Arrudeia Logo"> -->
+
+                    <!-- Logo para tema escuro (branco) -->
+                    <img src="assets/arrudeia_branco.png" class="logo-theme logo-dark" alt="Arrudeia Logo">
+                </a>
+            </div>
 
             <!-- Abas -->
             <div class="tabs-login">
@@ -57,7 +70,7 @@
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" placeholder="Digite sua senha" required>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="button" id="botaoEntrar">Entrar</button>
             </form>
 
             <!-- FORM DE CADASTRO -->
@@ -73,6 +86,11 @@
                 <div class="input-group">
                     <label for="senhaCadastro">Senha</label>
                     <input type="password" id="senhaCadastro" placeholder="Crie uma senha" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" name="terms" class="terms" required>
+                    <label for="terms">Li e concordo com os termos da <a href="#" class="privacy-link">Política de
+                            Privacidade</a></label>
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>
@@ -124,6 +142,23 @@
         formCadastro.classList.add("active");
         formLogin.classList.remove("active");
     };
+</script>
+<script>
+    // Script de login de demonstração
+    document.getElementById('botaoEntrar').addEventListener('click', function () {
+        const email = document.getElementById('email').value.trim();
+        const senha = document.getElementById('senha').value;
+
+        // Credenciais de teste para apresentação
+        if (email === 'cabloco' && senha === '123456') {
+            // Sucesso – redireciona para a página principal
+            alert('Login realizado com sucesso! Bem-vindo, Cabloco 👋');
+            window.location.href = 'index.html'; // mude aqui se quiser outra página
+        } else {
+            // Erro – mostra mensagem amigável
+            alert('E-mail ou senha incorretos 😅\nDica para a apresentação: use cabloco / 123456');
+        }
+    });
 </script>
 
 </html>

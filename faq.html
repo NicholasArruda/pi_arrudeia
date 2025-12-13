@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrudeia - FAQ</title>
-    <link rel="stylesheet" href="css/home.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -29,7 +28,7 @@
     <header class="header">
         <div class="container header-content">
             <div class="logo">
-                <img src="assets/logo-arrudeia.png"  alt="Arrudeia" class="logo-img">
+                <img src="assets/logo-arrudeia.png" alt="Arrudeia" class="logo-img">
                 <span class="logo-text"><img src="assets/arrudeia_branco.png" alt="logo" style="width: 100px;"></span>
             </div>
             <nav class="nav">
@@ -126,7 +125,7 @@
                     <span class="material-symbols-outlined toggle-icon">add</span>
                 </div>
                 <p class="faq-answer">
-                    O arrudeia é útil para pequenos empreendedores e comércios locais (pois é um canal estratégico para
+                    O Arrudeia é útil para pequenos empreendedores e comércios locais (pois é um canal estratégico para
                     aumentar a visibilidade do negócio), para produtores de eventos (temos uma área reservada para a
                     divulgação de eventos, ajudando a conectar o público a toda a agenda cultural e de lazer de Recife)
                     e para o turismo sustentável (valorizamos rotas alternativas e pequenos negócios, reduzindo a
@@ -164,22 +163,39 @@
     </footer>
 
     <script>
-        const itens = document.querySelectorAll('.faq-item');
+        document.addEventListener('DOMContentLoaded', () => {
+            const itens = document.querySelectorAll('.faq-item');
 
-        itens.forEach((item) => {
-            let icon = item.querySelector('.material-symbols-outlined');
-            let answer = item.querySelector('.faq-answer');
-            if (!icon || !answer) {
-                return;
-            }
-            icon.addEventListener('click', () => {
-                if (answer.style.display === "block") {
-                    answer.style.display = "none";
-                    icon.textContent = "+";
-                } else {
-                    answer.style.display = "block";
-                    icon.textContent = "−";
-                }
+            itens.forEach((item) => {
+                const question = item.querySelector('.faq-question');
+                const icon = item.querySelector('.toggle-icon');
+                const answer = item.querySelector('.faq-answer');
+
+                if (!icon || !answer || !question) return;
+
+                // estado inicial
+                answer.style.display = 'none';
+                icon.textContent = '+';
+
+                question.addEventListener('click', () => {
+                    const isOpen = answer.style.display === 'block';
+
+                    // fecha todos
+                    itens.forEach((i) => {
+                        const a = i.querySelector('.faq-answer');
+                        const ic = i.querySelector('.toggle-icon');
+                        if (a && ic) {
+                            a.style.display = 'none';
+                            ic.textContent = '+';
+                        }
+                    });
+
+                    // abre o clicado
+                    if (!isOpen) {
+                        answer.style.display = 'block';
+                        icon.textContent = '−';
+                    }
+                });
             });
         });
     </script>
