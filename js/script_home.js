@@ -26,7 +26,7 @@ const atividades = [
   {
     id: 4,
     categoria: 'roteiros',
-    titulo: 'Pra forar o Bucho',
+    titulo: 'Pra forrar o Bucho',
     descricao: 'Comida boa, feita do jeito certo. Da barraca de rua ao restaurante clássico.',
     imagem: 'assets/roteiro4.jpg'
   },
@@ -167,4 +167,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderizarSecao(roteirosGrid, 'roteiros');
   renderizarSecao(eventosGrid, 'eventos');
   atualizarFavoritos();
+
 });
