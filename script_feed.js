@@ -208,7 +208,7 @@ document.querySelector('.btn-publish').addEventListener('click', () => {
       </div>
       <div class="comments-section">
         <div class="comment-form">
-          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Você" class="avatar-small" />
+          <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
           <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
           <button class="btn-comment">Comentar</button>
         </div>
@@ -263,7 +263,7 @@ function addCommentEvent(button) {
     const now = new Date();
     const commentHTML = `
       <div class="comment">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Você" class="avatar-small" />
+        <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
         <div class="comment-content">
           <div class="comment-author">Você</div>
           <div class="comment-text">${text}</div>
